@@ -3,10 +3,10 @@ import tweepy,sys,jsonpickle
 consumer_key = 'PXmw5moKoMVDOF2nTtNYoNO3r'
 consumer_secret = '60tl7XXEifOR3VlQy9wAq8ntU1nxIXhhfqEMIgMBzIuKszGZ9b'
 
-qry='input'	 #query yang akan di cari
-maxTweets ='input' 	# Isi sembarang nilai sesuai kebutuhan anda
+qry='covid-19' #query yang akan di cari
+maxTweets =  500# Isi sembarang nilai sesuai kebutuhan anda
 tweetsPerQry = 100  # Jangan isi lebih dari 100, ndak boleh oleh Twitter
-fName='input' # Nama File hasil Crawling
+fName='covid.json' # Nama File hasil Crawling
 
 auth = tweepy.AppAuthHandler(consumer_key,consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
